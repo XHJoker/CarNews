@@ -1,0 +1,108 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BmobSDK (2.2.1):
+    - WechatOpenSDK (~> 1.7.7)
+  - CocoaLumberjack (3.2.0):
+    - CocoaLumberjack/Default (= 3.2.0)
+    - CocoaLumberjack/Extensions (= 3.2.0)
+  - CocoaLumberjack/Default (3.2.0)
+  - CocoaLumberjack/Extensions (3.2.0):
+    - CocoaLumberjack/Default
+  - CYLTabBarController (1.13.1)
+  - DACircularProgress (2.3.1)
+  - FlatUIKit (1.6.2)
+  - FMDB (2.7.2):
+    - FMDB/standard (= 2.7.2)
+  - FMDB/standard (2.7.2)
+  - Masonry (1.0.2)
+  - MBProgressHUD (0.9.2)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.12)
+  - MWPhotoBrowser (2.1.2):
+    - DACircularProgress (~> 2.3)
+    - MBProgressHUD (~> 0.9)
+    - SDWebImage (!= 3.7.2, ~> 3.7)
+  - RESideMenu (4.0.7)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - Shimmer (1.0.2)
+  - SWTableViewCell (0.3.7)
+  - TPKeyboardAvoiding (1.3.1)
+  - WechatOpenSDK (1.7.9)
+  - WMPageController (2.4.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - BlocksKit
+  - BmobSDK
+  - CocoaLumberjack
+  - CYLTabBarController
+  - FlatUIKit
+  - FMDB
+  - Masonry
+  - MBProgressHUD
+  - MJExtension
+  - MJRefresh
+  - MWPhotoBrowser
+  - RESideMenu
+  - SDWebImage
+  - Shimmer
+  - SWTableViewCell
+  - TPKeyboardAvoiding
+  - WMPageController
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  BmobSDK: 952f0ca736deae9d1b6591d72337df7d9072d4f2
+  CocoaLumberjack: 9b4aed7073d242f29cc2f62068d995faf67f703a
+  CYLTabBarController: 97f6b486f9e6c613d69e9c111cc9c2c5db7000ce
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  FlatUIKit: 1b41f0d4952ce8d970d8479ce79df54a960242c4
+  FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  MWPhotoBrowser: 5836d7aa041dc05a13de380c246826578adc5ea5
+  RESideMenu: f24c508404b49c667344c54aba7e590883533958
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
+  SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
+  TPKeyboardAvoiding: 0d6af20e95e2850f4c621841225b59ec7d8dd852
+  WechatOpenSDK: 1fe7e3b07db860d6a936c3ff4a5aba6b890958d9
+  WMPageController: e9af37a2c7f259582578b35f2b67530b061e3862
+
+PODFILE CHECKSUM: 25db567f31c6ccdcb441f8a43f3517b8e55d3b9c
+
+COCOAPODS: 1.1.1
