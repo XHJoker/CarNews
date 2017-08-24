@@ -8,6 +8,6 @@
 
 #import "ViewController.h"
 
-@interface TextAndImageViewController : ViewController
+@interface TextAndImageViewController : UIViewController
 
 @end

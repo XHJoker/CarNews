@@ -33,6 +33,8 @@
 		33554C771F4D78BB00B20A35 /* ImageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33554C741F4D78BB00B20A35 /* ImageContentView.m */; };
 		33554C781F4D78BB00B20A35 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 33554C751F4D78BB00B20A35 /* README.md */; };
 		33554C7B1F4D7DF200B20A35 /* HomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33554C7A1F4D7DF200B20A35 /* HomeDetailViewController.m */; };
+		335632221F4E63EC004AC2FA /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 335632211F4E63EC004AC2FA /* TextViewController.m */; };
+		335632251F4E6415004AC2FA /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 335632241F4E6415004AC2FA /* PictureViewController.m */; };
 		E856990EEF60C05A140B05FC /* libPods-CarNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E61D1F93394990706469CE /* libPods-CarNews.a */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +107,10 @@
 		33554C751F4D78BB00B20A35 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		33554C791F4D7DF200B20A35 /* HomeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDetailViewController.h; sourceTree = "<group>"; };
 		33554C7A1F4D7DF200B20A35 /* HomeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDetailViewController.m; sourceTree = "<group>"; };
+		335632201F4E63EC004AC2FA /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
+		335632211F4E63EC004AC2FA /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
+		335632231F4E6415004AC2FA /* PictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureViewController.h; sourceTree = "<group>"; };
+		335632241F4E6415004AC2FA /* PictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureViewController.m; sourceTree = "<group>"; };
 		392615CDE1BB9D6FF274A0C0 /* Pods-CarNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarNews/Pods-CarNews.debug.xcconfig"; sourceTree = "<group>"; };
 		A4421AC34563A1897D431D61 /* Pods-CarNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarNews/Pods-CarNews.release.xcconfig"; sourceTree = "<group>"; };
 		D5E61D1F93394990706469CE /* libPods-CarNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CarNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -269,6 +275,10 @@
 			children = (
 				33554C471F4D21DE00B20A35 /* TextAndImageViewController.h */,
 				33554C481F4D21DE00B20A35 /* TextAndImageViewController.m */,
+				335632201F4E63EC004AC2FA /* TextViewController.h */,
+				335632211F4E63EC004AC2FA /* TextViewController.m */,
+				335632231F4E6415004AC2FA /* PictureViewController.h */,
+				335632241F4E6415004AC2FA /* PictureViewController.m */,
 			);
 			name = Text;
 			sourceTree = "<group>";
@@ -581,9 +591,11 @@
 				33554C6E1F4D697B00B20A35 /* EdtMacro.c in Sources */,
 				33554C581F4D2A0400B20A35 /* HomeListTableViewCell.m in Sources */,
 				33554C671F4D2F3600B20A35 /* CNHomeRequest.m in Sources */,
+				335632251F4E6415004AC2FA /* PictureViewController.m in Sources */,
 				33554C6A1F4D41EF00B20A35 /* BaseRequest.m in Sources */,
 				33554C771F4D78BB00B20A35 /* ImageContentView.m in Sources */,
 				33554C4C1F4D21F200B20A35 /* VideoViewController.m in Sources */,
+				335632221F4E63EC004AC2FA /* TextViewController.m in Sources */,
 				33554C631F4D2E4400B20A35 /* BaseRequestManager.m in Sources */,
 				33554C491F4D21DE00B20A35 /* TextAndImageViewController.m in Sources */,
 			);
