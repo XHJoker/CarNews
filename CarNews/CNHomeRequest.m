@@ -25,7 +25,7 @@ static CNHomeRequest *manager = nil;
 
 #pragma public
 
--(void)cn_HomeRefreshDataCompletion:(HomeComplectionBlock)completion{
+-(void)cn_HomeRefreshDataCompletion:(BaseComplectionBlock)completion{
     self.page = 1;
     self.updateTime = @"0";
     
@@ -41,7 +41,7 @@ static CNHomeRequest *manager = nil;
 }
 
 
--(void)cn_HomeLoadMoreDataCompletion:(HomeComplectionBlock)completion{
+-(void)cn_HomeLoadMoreDataCompletion:(BaseComplectionBlock)completion{
     self.page += 1;
     NSString *url = [NSString stringWithFormat:@"%@-p%ld-s10-l%@.json",self.baseUrl,self.page,self.updateTime];
     

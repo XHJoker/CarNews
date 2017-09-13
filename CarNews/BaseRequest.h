@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^HomeComplectionBlock)(id response , BOOL success , NSError*error);
+typedef void (^BaseComplectionBlock)(id response , BOOL success , NSError*error);
 
 @interface BaseRequest : NSObject
 
 @property (strong , nonatomic) NSString *updateTime;
 @property (nonatomic , assign) NSInteger page;
 
--(void)cn_GetRequesWithParams:(NSDictionary *)params UrlString:(NSString*)aUrl andCompletion:(HomeComplectionBlock)completion;
+-(void)cn_GetRequesWithParams:(NSDictionary *)params UrlString:(NSString*)aUrl andCompletion:(BaseComplectionBlock)completion;
 @end

@@ -8,8 +8,13 @@
 
 #import "TextAndImageViewController.h"
 
+#import "TextViewController.h"
+#import "PictureViewController.h"
+
 @interface TextAndImageViewController ()
-@property (nonatomic,strong) UISegmentedControl *segment;
+@property (nonatomic ,strong) UISegmentedControl *segment;
+@property (nonatomic ,strong) TextViewController *textVC;
+@property (nonatomic ,strong) PictureViewController *pictureVC;
 @end
 
 @implementation TextAndImageViewController
@@ -18,6 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.titleView = self.segment;
+    [self segmentDefaultSelect];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,8 +31,38 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)segmentDefaultSelect{;
+    
+    [self segmentChange:self.segment];
+}
+
 -(void)segmentChange:(UISegmentedControl *)segment{
-    NSLog(@"%d",segment.selectedSegmentIndex);
+    
+    switch (segment.selectedSegmentIndex) {
+        case 0:
+        {
+            //[self addChildViewController:self.textVC];
+            [self.view addSubview:self.textVC.view];
+            
+            [self.pictureVC.view removeFromSuperview];
+            [self.pictureVC willMoveToParentViewController:nil];
+            [self.pictureVC removeFromParentViewController];
+        }
+            break;
+        case 1:
+        {
+            //[self addChildViewController:self.pictureVC];
+            [self.view addSubview:self.pictureVC.view];
+            
+            [self.textVC.view removeFromSuperview];
+            [self.textVC willMoveToParentViewController:nil];
+            [self.textVC removeFromParentViewController];
+        }
+            break;
+            
+        default:
+            break;
+    }
 }
 
 -(UISegmentedControl *)segment{
@@ -38,6 +74,22 @@
         _segment.tintColor = [UIColor whiteColor];
     }
     return _segment;
+}
+
+-(TextViewController *)textVC{
+    if (!_textVC) {
+        TextViewController *text = [[TextViewController alloc] init];
+        _textVC =text;
+    }
+    return _textVC;
+}
+
+-(PictureViewController *)pictureVC{
+    if (!_pictureVC) {
+        PictureViewController *picture = [[PictureViewController alloc] init];
+        _pictureVC = picture;
+    }
+    return _pictureVC;
 }
 
 @end

@@ -10,7 +10,8 @@
 
 #import <Masonry.h>
 #import "EdtMacro.h"
-#import <UIImageView+WebCache.h>
+//#import <UIImageView+WebCache.h>
+#import <UIImageView+YYWebImage.h>
 
 @interface HomeListTableViewCell()
 @property (nonatomic,strong) UIImageView *homeImageView;
@@ -99,7 +100,7 @@
 }
 
 -(void)setCellWithModel:(HomeResultNewslistModel *)listModel{
-    [self.homeImageView sd_setImageWithURL:[NSURL URLWithString:listModel.smallpic] placeholderImage:[UIImage imageNamed:@"cell_bg_noData_1"]];
+    [self.homeImageView yy_setImageWithURL:[NSURL URLWithString:listModel.smallpic] placeholder:nil];
     self.titleLab.text = listModel.title;
     self.dateLab.text = listModel.time;
     self.replycountLab.text = [NSString stringWithFormat:@"点击%ld",listModel.replycount];

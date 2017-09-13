@@ -33,8 +33,8 @@
 
 -(void)setupSubviews{
     
-    [self addChildViewControllerWithClassName:[HomeViewController description] imageName:@"news" title:@"新闻"];
-    [self addChildViewControllerWithClassName:[TextAndImageViewController description] imageName:@"text" title:@"图文"];
+    [self addChildViewControllerWithClassName:[HomeViewController description] imageName:@"news" title:@"汽车"];
+    [self addChildViewControllerWithClassName:[TextAndImageViewController description] imageName:@"text" title:@"搞笑"];
     [self addChildViewControllerWithClassName:[VideoViewController description] imageName:@"live" title:@"视频"];
     [self addChildViewControllerWithClassName:[MineViewController description] imageName:@"mine" title:@"我的"];
     

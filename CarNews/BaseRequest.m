@@ -11,7 +11,7 @@
 
 @implementation BaseRequest
 
--(void)cn_GetRequesWithParams:(NSDictionary *)params UrlString:(NSString *)aUrl andCompletion:(HomeComplectionBlock)completion{
+-(void)cn_GetRequesWithParams:(NSDictionary *)params UrlString:(NSString *)aUrl andCompletion:(BaseComplectionBlock)completion{
     
     [BaseRequestManager GET:[self noWhiteSpaceString:aUrl] parameters:params responseSeializerType:ResponseSeializerTypeJSON success:^(id responseObject) {
         // 处理数据
@@ -38,7 +38,7 @@
 
 #pragma mark -返回数据处理
 
-- (void)handleWithParams:(NSDictionary *)params Response:(id)responseObject completion:(HomeComplectionBlock)completion {
+- (void)handleWithParams:(NSDictionary *)params Response:(id)responseObject completion:(BaseComplectionBlock)completion {
     
     if ([responseObject isKindOfClass:[NSData class]]) {
         NSError *error;

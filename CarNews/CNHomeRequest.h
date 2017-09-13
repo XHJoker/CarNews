@@ -16,8 +16,8 @@
 +(instancetype)cn_Request;
 
 //HomeRefresh
--(void)cn_HomeRefreshDataCompletion:(HomeComplectionBlock)completion;
+-(void)cn_HomeRefreshDataCompletion:(BaseComplectionBlock)completion;
 
 //HomeLoadMore
--(void)cn_HomeLoadMoreDataCompletion:(HomeComplectionBlock)completion;
+-(void)cn_HomeLoadMoreDataCompletion:(BaseComplectionBlock)completion;
 @end

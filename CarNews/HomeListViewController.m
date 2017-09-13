@@ -221,7 +221,7 @@ static NSString *identifier = @"HomeCell";
     if (!_scrollView) {
         _scrollView = [[CircleScrollView alloc]initWithImgUrls:self.headerImageUrls fram:CGRectMake(0, 0, kScreenWidth, kScreenWidth*375.0/750)];
         _scrollView.circleScrollType = CircleScrollTypePageControlAndTimer;
-        _scrollView.circleScrollStyle = CircleScrollStyleSteadfast;
+        //_scrollView.circleScrollStyle = CircleScrollStyleSteadfast;
         _scrollView.circleDelegate = self;
     }
     return _scrollView;

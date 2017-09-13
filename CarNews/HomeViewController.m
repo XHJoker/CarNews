@@ -20,8 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"新闻来了";
     self.navigationController.navigationBar.translucent = YES;
+    self.title = @"资讯";
 }
 
 - (void)didReceiveMemoryWarning {
